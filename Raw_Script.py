@@ -55,7 +55,7 @@ titanic.head()
 titanic.drop(['Cabin', 'Embarked', 'Name', 'Ticket'], axis = 1, inplace = True)
 titanic.head()
 # Write out the cleaned data
-titanic.to_csv('titanic_ak_cleaned.csv', index = False) #Index = False removes the index column
+titanic.to_csv('titanic_ak_cleaned.csv', index = False) # "Index = False" removes the index column
 
 
 ## Foundations: Split data into Train, Validation, and Test set
@@ -81,8 +81,31 @@ y_val.to_csv('val_ak_label.csv', index=False)
 y_test.to_csv('test_ak_label.csv', index=False)
 
 ## Logistic Regression
+import joblib #for saving implemented algos
+import pandas as pd
 from sklearn.linear_model import LogisticRegression
-LogisticRegression()
-dir(LogisticRegression)
+from sklearn.model_selection import GridSearchCV #Cross-Validation for hyperparameter tuning.
+import warnings #Ignore warnings --Deprecations
+warnings.filterwarnings(action="ignore", category=FutureWarning)
+warnings.filterwarnings(action="ignore", category=DeprecationWarning)
 
-#Version control coding - Quick Digression!
+#Now, let's try to  change the working directory
+os.chdir('C:/LinkedIn')
+os.getcwd()
+
+
+tr_features = pd.read_csv('train_features.csv')
+tr_labels = pd.read_csv('/Ex_Files_Machine_Learning_Algorithms/Exercise Files/train_features.csv')
+
+
+
+
+
+
+
+## Version control coding - Quick Digression!
+#git remote add origin https://github.com/Hakeem-7/Adv_Algo.git
+#PS C:\LinkedIn> git add .
+#PS C:\LinkedIn> git commit -m "first commit"
+# PS C:\LinkedIn> git push -u origin master
+
