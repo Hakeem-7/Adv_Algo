@@ -8,11 +8,20 @@ import seaborn as sns
 print os.getcwd()  
 
 
-# Producig a cosine graph
+# Producing a cosine graph
 x = np.linspace(0, 20, 100)
 plt.plot(x, np.cos(x))
 plt.title("Cosine Graph")
 plt.show()
+
+# Producing a sine graph
+x = np.linspace(0, 20, 100)
+plt.plot(x, np.sin(x))
+plt.title("Sine Graph")
+plt.show()
+
+
+
 
 # Class examples and exercise
 ## Cleaning continous variables
