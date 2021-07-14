@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 
+print os.getcwd()  # Returns the current working directory
+
 # Producig a cosine graph
 x = np.linspace(0, 20, 100)
 plt.plot(x, np.cos(x))
@@ -90,12 +92,15 @@ warnings.filterwarnings(action="ignore", category=FutureWarning)
 warnings.filterwarnings(action="ignore", category=DeprecationWarning)
 
 #Now, let's try to  change the working directory
+# https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
+import os
 os.chdir('C:/LinkedIn')
 os.getcwd()
 
+tr_features = pd.read_csv('./Ex_Files_Machine_Learning_Algorithms/Exercise Files/train_features.csv')
+tr_labels = pd.read_csv('./Ex_Files_Machine_Learning_Algorithms/Exercise Files/train_labels.csv')
 
-tr_features = pd.read_csv('train_features.csv')
-tr_labels = pd.read_csv('/Ex_Files_Machine_Learning_Algorithms/Exercise Files/train_features.csv')
+
 
 
 
