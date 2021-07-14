@@ -22,8 +22,7 @@ plt.show()
 
 
 
-
-# Class examples and exercise
+# Class examples and exercises
 ## Cleaning continous variables
 titanic = pd.read_csv('C:/LinkedIn/Ex_Files_Machine_Learning_Algorithms/Exercise Files/titanic.csv')
 titanic.head(10) # Displays the first 10 rows of the dataset
