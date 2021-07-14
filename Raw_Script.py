@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 
-print os.getcwd()  # Returns the current working directory
+# Returns the current working directory
+print os.getcwd()  
+
 
 # Producig a cosine graph
 x = np.linspace(0, 20, 100)
