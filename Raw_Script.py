@@ -9,13 +9,14 @@ print os.getcwd()
 
 
 # Producing a cosine graph
-def cosine_graph():
+def cosine_graph(x):
     # Producing a cosine graph
     plt.plot(x, np.cos(x))
     plt.title("Cosine Graph")
     plt.show()
 
-x = np.linspace(0, 10, 100)
+y = np.linspace(0, 10, 100)
+cosine_graph(y)
 
 
 # Sine function
@@ -26,7 +27,7 @@ def sine_graph(x):
     plt.show()
 
 
-y = np.linspace(0, 10, 100)
+
 sine_graph(y)
 
 
