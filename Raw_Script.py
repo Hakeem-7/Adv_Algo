@@ -9,21 +9,29 @@ print os.getcwd()
 
 
 # Producing a cosine graph
-x = np.linspace(0, 20, 100)
-plt.plot(x, np.cos(x))
-plt.title("Cosine Graph")
-plt.show()
+def cosine_graph():
+    # Producing a cosine graph
+    plt.plot(x, np.cos(x))
+    plt.title("Cosine Graph")
+    plt.show()
 
-# Producing a sine graph
-x = np.linspace(0, 20, 100)
-plt.plot(x, np.sin(x))
-plt.title("Sine Graph")
-plt.show()
+x = np.linspace(0, 10, 100)
 
 
+# Sine function
+def sine_graph(x):
+    # Producing a sine graph
+    plt.plot(x, np.sin(x))
+    plt.title("Sine Graph")
+    plt.show()
 
 
-# Class examples and exercise
+y = np.linspace(0, 10, 100)
+sine_graph(y)
+
+
+
+# Class examples and exercises
 ## Cleaning continous variables
 titanic = pd.read_csv('C:/LinkedIn/Ex_Files_Machine_Learning_Algorithms/Exercise Files/titanic.csv')
 titanic.head(10) # Displays the first 10 rows of the dataset
