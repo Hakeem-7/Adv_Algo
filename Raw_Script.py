@@ -114,8 +114,9 @@ warnings.filterwarnings(action="ignore", category=DeprecationWarning)
 #Now, let's try to  change the working directory
 # https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
 import os
-os.chdir('C:/LinkedIn')
 os.getcwd()
+os.chdir('C:/LinkedIn')
+
 
 tr_features = pd.read_csv('./Ex_Files_Machine_Learning_Algorithms/Exercise Files/train_features.csv')
 tr_labels = pd.read_csv('./Ex_Files_Machine_Learning_Algorithms/Exercise Files/train_labels.csv')
